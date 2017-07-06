@@ -87,7 +87,7 @@ public class CameraConnectionFragment extends Fragment {
   int item_list_width;
   boolean isListOpen=false;
   ObjectAnimator animator;
-
+  static LinearLayout parse_layout;
 
 
 
@@ -310,7 +310,7 @@ public class CameraConnectionFragment extends Fragment {
         item_list = (LinearLayout) container.findViewById(R.id.item_list);
         item_list.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
         item_list_width = item_list.getMeasuredWidth();
-
+        parse_layout = (LinearLayout) container.findViewById(R.id.parse_list);
 
         Log.e("width", String.valueOf(item_list_width));
         indicator.setOnClickListener(new View.OnClickListener() {

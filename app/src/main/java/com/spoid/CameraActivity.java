@@ -22,6 +22,7 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class CameraActivity extends Activity {
@@ -98,7 +99,6 @@ public class CameraActivity extends Activity {
   private void setFragment() {
     getFragmentManager()
             .beginTransaction()
-            
             .replace(R.id.container, CameraConnectionFragment.newInstance())
             .commit();
   }

@@ -21,6 +21,8 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.spoid.Classifier.Recognition;
 
@@ -62,10 +64,24 @@ public class RecognitionScoreView extends View {
 
     canvas.drawPaint(bgPaint);
 
+
+
+
+
+
     if (results != null) {
+      CameraConnectionFragment.parse_layout.removeAllViews();
       for (final Recognition recog : results) {
 //        canvas.drawText(recog.getTitle() + ": " + recog.getConfidence(), x, y, fgPaint);
         canvas.drawText(recog.getTitle(), x, y, fgPaint);
+
+        LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(100,100);
+        ImageView image = new ImageView(getContext());
+        image.setImageResource(R.drawable.parse);
+        image.setLayoutParams(parms);
+        // Adds the view to the layout
+        CameraConnectionFragment.parse_layout.addView(image);
+
         y += fgPaint.getTextSize() * 1.5f;
       }
     }

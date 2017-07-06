@@ -17,6 +17,7 @@ package com.spoid;
 
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
+import android.graphics.Matrix;
 import android.os.Trace;
 import android.util.Log;
 
@@ -51,9 +52,11 @@ public class TensorFlowClassifier implements Classifier {
   }
 
   @Override
-  public List<Recognition> recognizeImage(final Bitmap bitmap) {
+  public List<Recognition> recognizeImage(Bitmap bitmap) {
     // Log this method so that it can be analyzed with systrace.
     Trace.beginSection("Recognize");
+    bitmap = rotateImage(bitmap, -90);
+
     final ArrayList<Recognition> recognitions = new ArrayList<Recognition>();
     for (final String result : classifyImageBmp(bitmap).split("\n")) {
       Log.i(TAG, "Parsing [" + result + "]");
@@ -81,4 +84,14 @@ public class TensorFlowClassifier implements Classifier {
 
   @Override
   public void close() {}
+
+  public static Bitmap rotateImage(Bitmap src, float degree)
+  {
+    // create new matrix
+    Matrix matrix = new Matrix();
+    // setup rotation degree
+    matrix.postRotate(degree);
+    Bitmap bmp = Bitmap.createBitmap(src, 0, 0, src.getWidth(), src.getHeight(), matrix, true);
+    return bmp;
+  }
 }

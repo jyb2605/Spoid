@@ -72,17 +72,19 @@ public class RecognitionScoreView extends View {
     if (results != null) {
       CameraConnectionFragment.parse_layout.removeAllViews();
       for (final Recognition recog : results) {
+        if(recog.getConfidence() > 0.3) {
 //        canvas.drawText(recog.getTitle() + ": " + recog.getConfidence(), x, y, fgPaint);
-        canvas.drawText(recog.getTitle(), x, y, fgPaint);
+          canvas.drawText(recog.getTitle(), x, y, fgPaint);
 
-        LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(100,100);
-        ImageView image = new ImageView(getContext());
-        image.setImageResource(R.drawable.parse);
-        image.setLayoutParams(parms);
-        // Adds the view to the layout
-        CameraConnectionFragment.parse_layout.addView(image);
+          LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(100, 100);
+          ImageView image = new ImageView(getContext());
+          image.setImageResource(R.drawable.parse);
+          image.setLayoutParams(parms);
+          // Adds the view to the layout
+          CameraConnectionFragment.parse_layout.addView(image);
 
-        y += fgPaint.getTextSize() * 1.5f;
+          y += fgPaint.getTextSize() * 1.5f;
+        }
       }
     }
   }

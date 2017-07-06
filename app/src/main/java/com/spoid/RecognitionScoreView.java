@@ -19,7 +19,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.util.TypedValue;
+import android.util.Log;
 import android.view.View;
 
 import com.spoid.Classifier.Recognition;
@@ -36,14 +36,18 @@ public class RecognitionScoreView extends View {
   public RecognitionScoreView(final Context context, final AttributeSet set) {
     super(context, set);
 
-    textSizePx =
-        TypedValue.applyDimension(
-            TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
+//    textSizePx =
+//        TypedValue.applyDimension(
+//            TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
+    textSizePx = 50;
+    Log.e("TextSize", String.valueOf(textSizePx));
     fgPaint = new Paint();
     fgPaint.setTextSize(textSizePx);
 
     bgPaint = new Paint();
-    bgPaint.setColor(0xcc4285f4);
+//    bgPaint.setColor(0xcc4285f4);
+    bgPaint.setColor(0xccffffff);
+
   }
 
   public void setResults(final List<Recognition> results) {
@@ -60,7 +64,8 @@ public class RecognitionScoreView extends View {
 
     if (results != null) {
       for (final Recognition recog : results) {
-        canvas.drawText(recog.getTitle() + ": " + recog.getConfidence(), x, y, fgPaint);
+//        canvas.drawText(recog.getTitle() + ": " + recog.getConfidence(), x, y, fgPaint);
+        canvas.drawText(recog.getTitle(), x, y, fgPaint);
         y += fgPaint.getTextSize() * 1.5f;
       }
     }

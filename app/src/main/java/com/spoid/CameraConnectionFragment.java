@@ -16,6 +16,7 @@
 
 package com.spoid;
 
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -41,6 +42,7 @@ import android.media.ImageReader;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
 import android.view.LayoutInflater;
@@ -48,6 +50,9 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.spoid.env.Logger;
@@ -70,6 +75,25 @@ public class CameraConnectionFragment extends Fragment {
   private static final int MINIMUM_PREVIEW_SIZE = 320;
 
   private RecognitionScoreView scoreView;
+
+
+
+
+
+
+
+  Button indicator;
+  LinearLayout item_list;
+  int item_list_width;
+  boolean isListOpen=false;
+  ObjectAnimator animator;
+
+
+
+
+
+
+
 
   /**
    * Conversion from screen rotation to JPEG orientation.
@@ -274,6 +298,47 @@ public class CameraConnectionFragment extends Fragment {
   @Override
   public View onCreateView(
           final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
+
+
+
+
+    container.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+      @Override
+      public void onGlobalLayout() {
+        container.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+        indicator = (Button) container.findViewById(R.id.indicator);
+        item_list = (LinearLayout) container.findViewById(R.id.item_list);
+        item_list.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
+        item_list_width = item_list.getMeasuredWidth();
+
+
+        Log.e("width", String.valueOf(item_list_width));
+        indicator.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+            if(!isListOpen){
+              animator = ObjectAnimator.ofFloat(item_list, "translationX", 0, item_list_width * 9 / 10);
+              animator.setDuration(500);
+              animator.start();
+              isListOpen=true;
+            }else{
+              animator = ObjectAnimator.ofFloat(item_list, "translationX", item_list_width * 9/10 ,0);
+              animator.setDuration(500);
+              animator.start();
+              isListOpen=false;
+            }
+          }
+        });
+
+      }
+    });
+
+
+
+
+
+
     return inflater.inflate(R.layout.camera_connection_fragment, container, false);
   }
 

@@ -30,6 +30,10 @@ public class CameraActivity extends Activity {
   private static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
   private static final String PERMISSION_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
+
+
+
+
   @Override
   protected void onCreate(final Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -44,6 +48,18 @@ public class CameraActivity extends Activity {
     } else {
       requestPermission();
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
   }
 

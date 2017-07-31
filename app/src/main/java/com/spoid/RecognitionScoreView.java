@@ -15,11 +15,11 @@ limitations under the License.
 
 package com.spoid;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -41,14 +41,14 @@ public class RecognitionScoreView extends View {
 //    textSizePx =
 //        TypedValue.applyDimension(
 //            TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
-    textSizePx = 50;
-    Log.e("TextSize", String.valueOf(textSizePx));
+    textSizePx = 30;
+//    Log.e("TextSize", String.valueOf(textSizePx));
     fgPaint = new Paint();
     fgPaint.setTextSize(textSizePx);
 
     bgPaint = new Paint();
 //    bgPaint.setColor(0xcc4285f4);
-    bgPaint.setColor(0xccffffff);
+    bgPaint.setColor(0xffffffff);
 
   }
 
@@ -59,10 +59,10 @@ public class RecognitionScoreView extends View {
 
   @Override
   public void onDraw(final Canvas canvas) {
-    final int x = 10;
+    final int x = 50;
     int y = (int) (fgPaint.getTextSize() * 1.5f);
 
-    canvas.drawPaint(bgPaint);
+//    canvas.drawPaint(bgPaint);
 
 
 
@@ -72,18 +72,18 @@ public class RecognitionScoreView extends View {
     if (results != null) {
       CameraConnectionFragment.parse_layout.removeAllViews();
       for (final Recognition recog : results) {
-        if(recog.getConfidence() > 0.3) {
+        if(recog.getConfidence() > 0.2) {
 //        canvas.drawText(recog.getTitle() + ": " + recog.getConfidence(), x, y, fgPaint);
           canvas.drawText(recog.getTitle(), x, y, fgPaint);
 
-          LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(100, 100);
-          ImageView image = new ImageView(getContext());
+          @SuppressLint("DrawAllocation") LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(50, 50);
+          @SuppressLint("DrawAllocation") ImageView image = new ImageView(getContext());
           image.setImageResource(R.drawable.parse);
           image.setLayoutParams(parms);
           // Adds the view to the layout
           CameraConnectionFragment.parse_layout.addView(image);
 
-          y += fgPaint.getTextSize() * 1.5f;
+          y += fgPaint.getTextSize() * 1.8f;
         }
       }
     }

@@ -8,7 +8,7 @@
     <com.spoid.AutoFitTextureView
         android:id="@+id/texture"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:background="@color/colorPrimary"
         android:layout_gravity="bottom"
- />
+        />
 
     <LinearLayout
         android:id="@+id/item_list"
@@ -52,7 +52,7 @@
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:id="@+id/profile"
-             />
+            />
         <Button
             android:layout_marginLeft="10dp"
             android:layout_width="40dp"

@@ -39,9 +39,12 @@ import android.hardware.camera2.CaptureResult;
 import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.ImageReader;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.support.annotation.RequiresApi;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
@@ -65,6 +68,7 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
+@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class CameraConnectionFragment extends Fragment {
   private static final Logger LOGGER = new Logger();
 
@@ -114,10 +118,18 @@ public class CameraConnectionFragment extends Fragment {
    */
   private final TextureView.SurfaceTextureListener surfaceTextureListener =
       new TextureView.SurfaceTextureListener() {
+        @RequiresApi(api = Build.VERSION_CODES.M)
         @Override
         public void onSurfaceTextureAvailable(
                 final SurfaceTexture texture, final int width, final int height) {
           openCamera(width, height);
+
+//          DisplayMetrics dm = getContext().getResources().getDisplayMetrics();
+//          int mwidth = dm.widthPixels;
+//          int mheight = dm.heightPixels;
+//          openCamera(mwidth, mheight);
+
+          Log.e("SurfaceTexture size" , width + " x " + height);
         }
 
         @Override
@@ -405,7 +417,8 @@ public class CameraConnectionFragment extends Fragment {
         // For still image captures, we use the largest available size.
         final Size largest =
             Collections.max(
-                Arrays.asList(map.getOutputSizes(ImageFormat.YUV_420_888)),
+//                Arrays.asList(map.getOutputSizes(ImageFormat.YUV_420_888)),
+                    Arrays.asList(map.getOutputSizes(ImageFormat.JPEG)),
                 new CompareSizesByArea());
 
         sensorOrientation = characteristics.get(CameraCharacteristics.SENSOR_ORIENTATION);
@@ -415,13 +428,18 @@ public class CameraConnectionFragment extends Fragment {
         // garbage capture data.
         previewSize =
             chooseOptimalSize(map.getOutputSizes(SurfaceTexture.class), width, height, largest);
+//        Log.e("CameraOutputs " , width + " x " + height);
+//        Log.e("CameraOutputs preview" , previewSize.getWidth() + " x " + previewSize.getHeight());
+
 
         // We fit the aspect ratio of TextureView to the size of preview we picked.
         final int orientation = getResources().getConfiguration().orientation;
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
-          textureView.setAspectRatio(previewSize.getWidth(), previewSize.getHeight());
+//          textureView.setAspectRatio(previewSize.getWidth(), previewSize.getHeight());
+          textureView.setAspectRatio(width, height);
         } else {
-          textureView.setAspectRatio(previewSize.getHeight(), previewSize.getWidth());
+//          textureView.setAspectRatio(previewSize.getHeight(), previewSize.getWidth());
+          textureView.setAspectRatio(height, width);
         }
 
         CameraConnectionFragment.this.cameraId = cameraId;

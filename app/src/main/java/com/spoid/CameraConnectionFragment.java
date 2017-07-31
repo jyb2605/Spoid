@@ -17,6 +17,7 @@
 package com.spoid;
 
 import android.animation.ObjectAnimator;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -57,6 +58,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.spoid.env.Logger;
@@ -72,6 +74,12 @@ import java.util.concurrent.TimeUnit;
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class CameraConnectionFragment extends Fragment {
+
+  static ArrayList<Item> items_list;
+  static ResultAdapter resultAdapter;
+
+
+
   private static final Logger LOGGER = new Logger();
 
   /**
@@ -81,7 +89,7 @@ public class CameraConnectionFragment extends Fragment {
   private static final int MINIMUM_PREVIEW_SIZE = 320;
 
   private RecognitionScoreView scoreView;
-  static ListView scoreListView;
+  ListView scoreListView;
 
 
 
@@ -325,7 +333,7 @@ public class CameraConnectionFragment extends Fragment {
         item_list = (LinearLayout) container.findViewById(R.id.item_list);
         item_list.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
         item_list_width = item_list.getMeasuredWidth();
-        parse_layout = (LinearLayout) container.findViewById(R.id.parse_list);
+//        parse_layout = (LinearLayout) container.findViewById(R.id.parse_list);
 
         Log.e("width", String.valueOf(item_list_width));
         indicator.setOnClickListener(new View.OnClickListener() {
@@ -357,13 +365,21 @@ public class CameraConnectionFragment extends Fragment {
     return inflater.inflate(R.layout.camera_connection_fragment, container, false);
   }
 
+  @TargetApi(Build.VERSION_CODES.M)
   @Override
   public void onViewCreated(final View view, final Bundle savedInstanceState) {
     textureView = (AutoFitTextureView) view.findViewById(R.id.texture);
     scoreView = (RecognitionScoreView) view.findViewById(R.id.results);
-    scoreListView = (ListView) view.findViewById(R.id.resultsListView);
 
-//    scoreListView.setAdapter();
+
+    items_list = new ArrayList<>();
+
+
+    resultAdapter = new ResultAdapter(items_list, getContext());
+
+
+    scoreListView = (ListView) view.findViewById(R.id.resultsListView);
+    scoreListView.setAdapter(resultAdapter);
   }
 
   @Override
@@ -712,25 +728,36 @@ public class CameraConnectionFragment extends Fragment {
 
 
   class ResultAdapter extends BaseAdapter{
-//    ArrayList<>
+    ArrayList<Item> data_list;
+    Context con;
+    LayoutInflater inflater;
+    ResultAdapter(ArrayList<Item> data_list, Context con){
+      this.data_list = data_list;
+      this.con = con;
+      inflater = (LayoutInflater) con.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    }
     @Override
     public int getCount() {
-      return 0;
+      return data_list.size();
     }
 
     @Override
-    public Object getItem(int position) {
-      return null;
+    public Item getItem(int position) {
+      return data_list.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-      return 0;
+      return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-      return null;
+      convertView = inflater.inflate(R.layout.result_item, parent, false);
+      TextView item_title = (TextView) convertView.findViewById(R.id.item_title);
+      item_title.setText(data_list.get(position).name);
+
+      return convertView;
     }
   }
 }

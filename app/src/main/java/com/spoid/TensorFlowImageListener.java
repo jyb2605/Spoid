@@ -199,6 +199,8 @@ public class TensorFlowImageListener implements OnImageAvailableListener {
               LOGGER.v("Result: " + result.getTitle());
             }
             scoreView.setResults(results);
+
+
             computing = false;
           }
         });

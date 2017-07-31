@@ -15,79 +15,95 @@ limitations under the License.
 
 package com.spoid;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import com.spoid.Classifier.Recognition;
 
 import java.util.List;
 
-import static com.spoid.CameraConnectionFragment.scoreListView;
-
 public class RecognitionScoreView extends View {
-  private static final float TEXT_SIZE_DIP = 24;
-  private List<Recognition> results;
-  private final float textSizePx;
-  private final Paint fgPaint;
-  private final Paint bgPaint;
+    private static final float TEXT_SIZE_DIP = 24;
+    private List<Recognition> results;
+    private final float textSizePx;
+    private final Paint fgPaint;
+    private final Paint bgPaint;
 
-  public RecognitionScoreView(final Context context, final AttributeSet set) {
-    super(context, set);
+    public RecognitionScoreView(final Context context, final AttributeSet set) {
+        super(context, set);
 
 //    textSizePx =
 //        TypedValue.applyDimension(
 //            TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
-    textSizePx = 30;
+        textSizePx = 30;
 //    Log.e("TextSize", String.valueOf(textSizePx));
-    fgPaint = new Paint();
-    fgPaint.setTextSize(textSizePx);
+        fgPaint = new Paint();
+        fgPaint.setTextSize(textSizePx);
 
-    bgPaint = new Paint();
+        bgPaint = new Paint();
 //    bgPaint.setColor(0xcc4285f4);
-    bgPaint.setColor(0xffffffff);
+        bgPaint.setColor(0xffffffff);
 
-  }
-
-  public void setResults(final List<Recognition> results) {
-    this.results = results;
-    postInvalidate();
-  }
-
-  @Override
-  public void onDraw(final Canvas canvas) {
-    final int x = 50;
-    int y = (int) (fgPaint.getTextSize() * 1.5f);
-
-//    canvas.drawPaint(bgPaint);
-
-
-
-
-
-
-    if (results != null) {
-      CameraConnectionFragment.parse_layout.removeAllViews();
-      for (final Recognition recog : results) {
-        if(recog.getConfidence() > 0.2) {
-//        canvas.drawText(recog.getTitle() + ": " + recog.getConfidence(), x, y, fgPaint);
-          canvas.drawText(recog.getTitle(), x, y, fgPaint);
-
-          @SuppressLint("DrawAllocation") LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(50, 50);
-          @SuppressLint("DrawAllocation") ImageView image = new ImageView(getContext());
-          image.setImageResource(R.drawable.parse);
-          image.setLayoutParams(parms);
-          // Adds the view to the layout
-          CameraConnectionFragment.parse_layout.addView(image);
-
-          y += fgPaint.getTextSize() * 1.8f;
-        }
-      }
     }
-  }
+
+    public void setResults(final List<Recognition> results) {
+        this.results = results;
+        postInvalidate();
+    }
+
+    @Override
+    public void onDraw(final Canvas canvas) {
+
+
+        if (results != null) {
+            CameraConnectionFragment.items_list.clear();
+
+            for (final Recognition recog : results) {
+                if (recog.getConfidence() > 0.2) {
+                    Log.e("recog", "ID : " + recog.getId() + ", TITLE : " + recog.getTitle());
+
+                    switch (Integer.valueOf(recog.getId())) {
+                        case 543:
+                            CameraConnectionFragment.items_list.add(new Item("노트북", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
+                            break;
+                        default:
+                            break;
+                    }
+
+                }
+            }
+            CameraConnectionFragment.resultAdapter.notifyDataSetChanged();
+        }
+
+//
+//        final int x = 50;
+//        int y = (int) (fgPaint.getTextSize() * 1.5f);
+//
+////    canvas.drawPaint(bgPaint);
+//
+//
+//        if (results != null) {
+////      CameraConnectionFragment.parse_layout.removeAllViews();
+//            for (final Recognition recog : results) {
+//                Log.e("recog.getTitle()", recog.getTitle());
+//                if (recog.getConfidence() > 0.2) {
+////        canvas.drawText(recog.getTitle() + ": " + recog.getConfidence(), x, y, fgPaint);
+//                    canvas.drawText(recog.getTitle(), x, y, fgPaint);
+//
+////          @SuppressLint("DrawAllocation") LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(50, 50);
+////          @SuppressLint("DrawAllocation") ImageView image = new ImageView(getContext());
+////          image.setImageResource(R.drawable.parse);
+////          image.setLayoutParams(parms);
+////          // Adds the view to the layout
+////          CameraConnectionFragment.parse_layout.addView(image);
+//
+//                    y += fgPaint.getTextSize() * 1.8f;
+//                }
+//            }
+//        }
+    }
 }

@@ -28,6 +28,8 @@ import com.spoid.Classifier.Recognition;
 
 import java.util.List;
 
+import static com.spoid.CameraConnectionFragment.scoreListView;
+
 public class RecognitionScoreView extends View {
   private static final float TEXT_SIZE_DIP = 24;
   private List<Recognition> results;

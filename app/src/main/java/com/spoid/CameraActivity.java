@@ -99,7 +99,7 @@ public class CameraActivity extends Activity {
   private void setFragment() {
     getFragmentManager()
             .beginTransaction()
-            .replace(R.id.container, CameraConnectionFragment.newInstance())
+           // .replace(R.id.container, CameraConnectionFragment.newInstance())
             .commit();
   }
 }

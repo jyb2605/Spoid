@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         ProgressDialog dialog = ProgressDialog.show(LoginActivity.this, "", "로그인 중입니다", true);
     }
 
-    private DialogDefActivity def_dialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,23 +60,6 @@ public class LoginActivity extends AppCompatActivity {
 
 
 }
-
-    public void onClickView(View v) {
-        switch (v.getId()) {
-            case R.id.button:
-                def_dialog = new DialogDefActivity(this,
-                        "의자",
-                        "나무",
-                        "못",
-                        "톱",
-                        "의자(椅子)는 사람이 앉는데에 쓰는 가구이다.\n교상(交床)이라고도 한다.",
-                        "2017.05.28 조합으로 획득");
-                def_dialog.show();
-                break;
-        }
-    }
-
-
 
 
 }

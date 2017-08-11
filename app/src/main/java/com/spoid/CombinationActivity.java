@@ -22,11 +22,20 @@ import java.util.ArrayList;
  */
 
 public class CombinationActivity extends Activity {
+
+
+    ViewGroup element1;
+    ViewGroup element2;
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_combination);
+
+        element1 = (ViewGroup)findViewById(R.id.element1);
+        element2 = (ViewGroup)findViewById(R.id.element2);
+
 
         ListView listView;
         ad adapter = new ad();
@@ -34,9 +43,44 @@ public class CombinationActivity extends Activity {
         listView = (ListView)findViewById(R.id.listview);
         listView.setAdapter(adapter);
 
+        adapter.addItem(ContextCompat.getDrawable(this,R.drawable.btn_x),"없음");
         adapter.addItem(ContextCompat.getDrawable(this,R.drawable.icon_hammer),"망치");
         adapter.addItem(ContextCompat.getDrawable(this,R.drawable.icon_scissors),"가위");
         adapter.addItem(ContextCompat.getDrawable(this,R.drawable.icon_saw),"톱");
+
+
+        // item add working
+        element1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(Gloval.getElement1State()){
+                    Gloval.element1Off();
+                    element1.setBackgroundResource(R.drawable.gray_border);
+                }
+                else {
+                    element1.setBackgroundResource(R.drawable.blue_border);
+                    Gloval.element1On();
+                    Gloval.element2Off();
+                    element2.setBackgroundResource(R.drawable.gray_border);
+                }
+            }
+        });
+
+        element2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(Gloval.getElement2State()){
+                    Gloval.element2Off();
+                    element2.setBackgroundResource(R.drawable.gray_border);
+                }
+                else {
+                    element2.setBackgroundResource(R.drawable.blue_border);
+                    Gloval.element2On();
+                    Gloval.element1Off();
+                    element1.setBackgroundResource(R.drawable.gray_border);
+                }
+            }
+        });
 
     }
 

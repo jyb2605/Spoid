@@ -19,7 +19,7 @@ import android.widget.TextView;
 public class DialogDefActivity extends Dialog{
 
     private TextView mTitleView;
-
+    Context mContext;
     private TextView mContentView1_1;
     private TextView mContentView1_2;
     private TextView mContentView1_3;
@@ -71,9 +71,9 @@ public class DialogDefActivity extends Dialog{
 
     }
 
-    public DialogDefActivity(Context context, String txt_title ,String txt_content1_1, String txt_content1_2,
-                             String txt_content1_3,String txt_content2,String txt_content3) {
-        super(context,android.R.style.Theme_Translucent_NoTitleBar);
+    public DialogDefActivity(Context context, String txt_title , String txt_content1_1, String txt_content1_2,
+                             String txt_content1_3, String txt_content2, String txt_content3) {
+        super(context , android.R.style.Theme_Translucent_NoTitleBar);
         this.mTitle=txt_title;
         this.mContent1_1=txt_content1_1;
         this.mContent1_2=txt_content1_2;

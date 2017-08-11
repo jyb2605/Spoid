@@ -64,7 +64,7 @@ public class RecognitionScoreView extends View {
 
             for (final Recognition recog : results) {
                 if (recog.getConfidence() > 0.2) {
-                    Log.e("recog", "ID : " + recog.getId() + ", TITLE : " + recog.getTitle());
+                    Log.e("recog", "ID : " + recog.getId() + ", TITLE : " + recog.getTitle() + ", recognition rate : " + recog.getConfidence());
 
                     switch (Integer.valueOf(recog.getId())) {
                         case 543:

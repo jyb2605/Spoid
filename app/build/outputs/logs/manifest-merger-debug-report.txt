@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:2:1-72:12
 	package
 		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:3:5-24
 		INJECTED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml
@@ -13,125 +13,149 @@ ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:2:1-5
 	android:versionCode
 		INJECTED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.CAMERA
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:5:5-65
-	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:5:22-62
-uses-feature#android.hardware.camera
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:7:5-60
-	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:7:19-57
-uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:8:5-70
-	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:8:19-67
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:10:5-81
-	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:10:22-78
 uses-sdk
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:12:5-14:41
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\DANBI\.android\build-cache\041c11e5cacd2af7737b01eafee2560f528787a6\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\DANBI\.android\build-cache\a76f4986cf5a7c2f58f8bdc8ba0f22f628334728\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\DANBI\.android\build-cache\54b27fb9bc49762adea972d05ee7354a6df1a742\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\4ba3eb6424db7721babd807f4146c5664ac9dd24\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\f6ec769ff8a73c42926b53c75d21b0b463ed0463\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\DANBI\.android\build-cache\38ccf11bd7958e8ebbb02f905c79c5d96ba97a7f\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\DANBI\.android\build-cache\7c2a78d64a84121c753b708778f275cdeb4042fb\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\DANBI\.android\build-cache\e4a41020187b98fb63226f3b6945d6193a26e12d\output\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\DANBI\.android\build-cache\5c9fe0449e73e1fcf346e7decdb37f0de85f59a6\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\DANBI\.android\build-cache\80dc0884c567e4ce1c93bc752b00493d12f6740e\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\DANBI\.android\build-cache\3cad14f47a8029947308fda8877399e8555b3259\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\4ba3eb6424db7721babd807f4146c5664ac9dd24\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\f6ec769ff8a73c42926b53c75d21b0b463ed0463\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\DANBI\.android\build-cache\e4fb6af08b22eb02387be5c09407195c277087e5\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\DANBI\.android\build-cache\80dc0884c567e4ce1c93bc752b00493d12f6740e\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\DANBI\.android\build-cache\f87d964d31d228d1c64a2d02a804bc339524e2c2\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\DANBI\.android\build-cache\041c11e5cacd2af7737b01eafee2560f528787a6\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\DANBI\.android\build-cache\54b27fb9bc49762adea972d05ee7354a6df1a742\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:design:25.3.1] C:\Users\DANBI\.android\build-cache\a76f4986cf5a7c2f58f8bdc8ba0f22f628334728\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:14:9-38
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:7:9-38
 		INJECTED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:6:9-35
 		INJECTED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:9:22-62
+uses-feature#android.hardware.camera
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:11:5-60
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:11:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:12:5-70
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:12:19-67
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:14:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:15:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:16:22-77
 application
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:16:5-48:19
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:18:5-70:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\DANBI\.android\build-cache\041c11e5cacd2af7737b01eafee2560f528787a6\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\DANBI\.android\build-cache\a76f4986cf5a7c2f58f8bdc8ba0f22f628334728\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\DANBI\.android\build-cache\54b27fb9bc49762adea972d05ee7354a6df1a742\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\4ba3eb6424db7721babd807f4146c5664ac9dd24\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\f6ec769ff8a73c42926b53c75d21b0b463ed0463\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\DANBI\.android\build-cache\38ccf11bd7958e8ebbb02f905c79c5d96ba97a7f\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\DANBI\.android\build-cache\7c2a78d64a84121c753b708778f275cdeb4042fb\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\DANBI\.android\build-cache\e4a41020187b98fb63226f3b6945d6193a26e12d\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\DANBI\.android\build-cache\5c9fe0449e73e1fcf346e7decdb37f0de85f59a6\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\DANBI\.android\build-cache\80dc0884c567e4ce1c93bc752b00493d12f6740e\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\DANBI\.android\build-cache\3cad14f47a8029947308fda8877399e8555b3259\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\4ba3eb6424db7721babd807f4146c5664ac9dd24\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\f6ec769ff8a73c42926b53c75d21b0b463ed0463\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\DANBI\.android\build-cache\80dc0884c567e4ce1c93bc752b00493d12f6740e\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\DANBI\.android\build-cache\f87d964d31d228d1c64a2d02a804bc339524e2c2\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\DANBI\.android\build-cache\041c11e5cacd2af7737b01eafee2560f528787a6\output\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:21:9-41
 	android:supportsRtl
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:23:9-35
 	android:roundIcon
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:20:9-43
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:22:9-43
 	android:allowBackup
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:19:9-35
 	android:icon
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:18:9-38
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:20:9-38
 	android:theme
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:22:9-40
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:24:9-40
 activity#com.spoid.CameraActivity
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:23:9-26:20
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:26:9-29:20
 	android:screenOrientation
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:24:13-50
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:27:13-50
 	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:23:19-49
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:26:19-49
 activity#com.spoid.CombinationActivity
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:27:9-30:20
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:30:9-33:20
 	android:screenOrientation
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:28:13-50
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:31:13-50
 	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:27:19-54
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:30:19-54
 activity#com.spoid.SplashActivity
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:31:9-39:20
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:34:9-43:20
 	android:screenOrientation
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:33:13-50
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:36:13-50
 	android:theme
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:34:13-72
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:37:13-72
 	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:32:13-43
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:35:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:35:13-38:29
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:38:13-41:25
 action#android.intent.action.MAIN
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:36:17-69
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:39:13-65
 	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:36:25-66
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:39:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:37:17-77
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:40:13-73
 	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:37:27-74
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:40:23-70
 activity#com.spoid.JoinActivity
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:40:9-43:20
-	android:screenOrientation
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:41:13-50
-	android:theme
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:42:13-72
-	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:40:19-47
-activity#com.spoid.LoginActivity
 ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:44:9-47:20
 	android:screenOrientation
 		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:45:13-50
 	android:theme
 		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:46:13-72
 	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:44:19-48
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:44:19-47
+activity#com.spoid.LoginActivity
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:48:9-57:20
+	android:screenOrientation
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:49:13-50
+	android:theme
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:48:19-48
+activity#com.spoid.UndrBarActivity
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:58:9-68:20
+	android:screenOrientation
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:60:13-50
+	android:theme
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:61:13-56
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:59:13-44
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\DANBI\.android\build-cache\54b27fb9bc49762adea972d05ee7354a6df1a742\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\DANBI\.android\build-cache\a76f4986cf5a7c2f58f8bdc8ba0f22f628334728\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\DANBI\.android\build-cache\54b27fb9bc49762adea972d05ee7354a6df1a742\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\4ba3eb6424db7721babd807f4146c5664ac9dd24\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\f6ec769ff8a73c42926b53c75d21b0b463ed0463\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\DANBI\.android\build-cache\38ccf11bd7958e8ebbb02f905c79c5d96ba97a7f\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\DANBI\.android\build-cache\7c2a78d64a84121c753b708778f275cdeb4042fb\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\DANBI\.android\build-cache\e4a41020187b98fb63226f3b6945d6193a26e12d\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\DANBI\.android\build-cache\5c9fe0449e73e1fcf346e7decdb37f0de85f59a6\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\DANBI\.android\build-cache\80dc0884c567e4ce1c93bc752b00493d12f6740e\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\DANBI\.android\build-cache\3cad14f47a8029947308fda8877399e8555b3259\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\4ba3eb6424db7721babd807f4146c5664ac9dd24\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\DANBI\.android\build-cache\f6ec769ff8a73c42926b53c75d21b0b463ed0463\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\DANBI\.android\build-cache\e4fb6af08b22eb02387be5c09407195c277087e5\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\DANBI\.android\build-cache\80dc0884c567e4ce1c93bc752b00493d12f6740e\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\DANBI\.android\build-cache\f87d964d31d228d1c64a2d02a804bc339524e2c2\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\DANBI\.android\build-cache\54b27fb9bc49762adea972d05ee7354a6df1a742\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\DANBI\.android\build-cache\a76f4986cf5a7c2f58f8bdc8ba0f22f628334728\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\DANBI\.android\build-cache\54b27fb9bc49762adea972d05ee7354a6df1a742\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\DANBI\.android\build-cache\a76f4986cf5a7c2f58f8bdc8ba0f22f628334728\output\AndroidManifest.xml:26:9-47

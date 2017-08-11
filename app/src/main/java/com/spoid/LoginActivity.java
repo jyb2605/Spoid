@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                startActivity(new Intent(LoginActivity.this, CameraConnectionFragment.class));
+                startActivity(new Intent(LoginActivity.this, CameraActivity.class));
             }
 
         };

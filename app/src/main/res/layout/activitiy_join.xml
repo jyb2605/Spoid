@@ -33,6 +33,7 @@
                 android:background="@layout/text_background"
                 android:layout_marginRight="20dp"
                 android:gravity="right"
+                android:imeOptions="flagNoExtractUi"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -55,7 +56,8 @@
             android:layout_width="225dp"
             android:layout_height="40dp"
             android:background="@layout/text_background"
-            android:gravity="right"/>
+            android:gravity="right"
+            android:imeOptions="flagNoExtractUi"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -90,6 +92,7 @@
             android:layout_marginRight="20dp"
             android:gravity="right"
             android:inputType="textPassword"
+            android:imeOptions="flagNoExtractUi"
             />
 
             <TextView
@@ -113,7 +116,8 @@
             android:layout_height="40dp"
             android:background="@layout/text_background"
             android:gravity="right"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:imeOptions="flagNoExtractUi"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -146,6 +150,7 @@
             android:background="@layout/text_background"
             android:layout_marginRight="20dp"
             android:gravity="right"
+            android:imeOptions="flagNoExtractUi"
             />
 
             <TextView

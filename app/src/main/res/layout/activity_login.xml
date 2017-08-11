@@ -28,6 +28,8 @@
             android:background="@layout/text_background"
             android:layout_marginRight="20dp"
             android:gravity="right"
+            android:imeOptions="flagNoExtractUi"
+
             />
 
         <TextView
@@ -56,6 +58,7 @@
             android:layout_marginRight="20dp"
             android:gravity="right"
             android:inputType="textPassword"
+            android:imeOptions="flagNoExtractUi"
             />
         <TextView
             android:layout_width="wrap_content"

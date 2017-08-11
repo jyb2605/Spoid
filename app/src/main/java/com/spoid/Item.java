@@ -1,5 +1,7 @@
 package com.spoid;
 
+import android.graphics.drawable.Drawable;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;

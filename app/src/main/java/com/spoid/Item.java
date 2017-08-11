@@ -1,10 +1,6 @@
 package com.spoid;
 
-import android.graphics.drawable.Drawable;
-
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * Created by user on 2017-07-31.
@@ -21,7 +17,10 @@ public class Item {
 
     public Item() {
     }
-
+    public Item(int img_src, String name){
+        this.name = name;
+        this.img_src = img_src;
+    }
     public Item(String name, String recipe, String tool, String definition,
                 int img_src, int icon_src) {
         this.name = name;
@@ -38,5 +37,12 @@ public class Item {
         created_time+='.';
         created_time += Calendar.getInstance().get(Calendar.DATE);
         
+    }
+    public String getName() {
+      return name;
+    }
+    public int getImg()
+    {
+        return img_src;
     }
 }

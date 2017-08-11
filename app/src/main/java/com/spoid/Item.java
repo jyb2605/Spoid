@@ -1,5 +1,7 @@
 package com.spoid;
 
+import android.graphics.drawable.Drawable;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -14,14 +16,14 @@ public class Item {
     String tool;
     String definition;
     String created_time;
-    int img_src;
-    int icon_src;
+    Drawable img_src;
+    Drawable icon_src;
 
     public Item() {
     }
 
     public Item(String name, String recipe, String tool, String definition,
-                int img_src, int icon_src) {
+                Drawable img_src, Drawable icon_src) {
         this.name = name;
         this.recipe = recipe;
         this.tool = tool;

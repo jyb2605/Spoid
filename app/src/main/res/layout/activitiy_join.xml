@@ -183,21 +183,6 @@
 
 
             <Button
-                android:id="@+id/man"
-                android:layout_width="23dp"
-                android:layout_height="18.5dp"
-                android:layout_marginRight="100dp"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="right"
-                android:gravity="center_horizontal"
-                android:textColor="#d9d9d9"
-                android:textSize="12.5sp"
-                android:background="#ffffff"
-                android:text="남성"
-                android:visibility="visible"
-                />
-
-            <Button
                 android:id="@+id/man_bold"
                 android:layout_width="23dp"
                 android:layout_height="18.5dp"
@@ -207,7 +192,7 @@
                 android:gravity="center_horizontal"
                 android:textColor="#000000"
                 android:textSize="12.5sp"
-                android:background="#ffffff"
+                android:background="#00ff0000"
                 android:text="남성"
                 android:textStyle="bold"
                 android:visibility="gone"
@@ -223,8 +208,22 @@
             android:gravity="center_horizontal"
             android:textColor="#d9d9d9"
             android:textSize="12.5sp"
-            android:background="#ffffff"
+            android:background="#00ff0000"
             android:text="여성" />
+
+            <Button
+                android:id="@+id/man"
+                android:layout_width="23dp"
+                android:layout_height="18.5dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="5dp"
+                android:background="#00ff0000"
+                android:gravity="center_horizontal"
+                android:text="남성"
+                android:textColor="#d9d9d9"
+                android:textSize="12.5sp"
+                android:visibility="visible" />
 
         </FrameLayout>
 

@@ -22,8 +22,7 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".CameraActivity"
+    <activity android:name=".CameraActivity"
             android:screenOrientation="landscape">
 
         </activity>
@@ -66,7 +65,6 @@
             <!--</intent-filter>-->
 
         </activity>
-
     </application>
 
 </manifest>

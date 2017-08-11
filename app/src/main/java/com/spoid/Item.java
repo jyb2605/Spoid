@@ -16,14 +16,14 @@ public class Item {
     String tool;
     String definition;
     String created_time;
-    Drawable img_src;
-    Drawable icon_src;
+    int img_src;
+    int icon_src;
 
     public Item() {
     }
 
     public Item(String name, String recipe, String tool, String definition,
-                Drawable img_src, Drawable icon_src) {
+                int img_src, int icon_src) {
         this.name = name;
         this.recipe = recipe;
         this.tool = tool;

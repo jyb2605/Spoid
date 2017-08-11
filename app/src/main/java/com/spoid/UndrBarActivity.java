@@ -99,6 +99,20 @@ public class UndrBarActivity extends AppCompatActivity {
                 this.title = (TextView) view.findViewById(R.id.textView);
                 this.image = (ImageView) view.findViewById(R.id.imageView2);
 
+                image.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(Gloval.getElement1State()){
+
+                        }
+                        else if(Gloval.getElement2State()){
+
+                        }
+                        else{
+                            // 다이어로그 출력
+                        }
+                    }
+                });
 
                 view.setOnClickListener(new View.OnClickListener() {
                     @Override

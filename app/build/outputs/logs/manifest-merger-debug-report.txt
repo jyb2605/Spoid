@@ -1,164 +1,164 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:2:1-69:12
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:2:1-69:12
 	package
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:3:5-24
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:3:5-24
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.android\build-cache\1705cd4ab4f236c90fa698325aa03b855b864e16\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:25.3.1] C:\Users\user\.android\build-cache\65a437f9bb626b58c1ae9e4ae15fff5b389e2559\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\user\.android\build-cache\cbe7e0ef1fdc9f07a18ccee8f24fa69fc1e742cc\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\user\.android\build-cache\12dd7f92d22ef03a330e0d6a192dd7f98f1c7b72\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\user\.android\build-cache\7e686bc4e546bdebb803b662458b745a14dcbfda\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\user\.android\build-cache\16a679991c6263921d8b2e6f8c9e67d3a427c15c\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\user\.android\build-cache\0210543d8a64cb1bde1a7ea5e89215e2ffcdb839\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\user\.android\build-cache\a088fd829698e7b9920e4a058864b9ebbde0dcac\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\user\.android\build-cache\a6576bebb519a2af8d718aff9ab31a291d1f420a\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\user\.android\build-cache\c694b46bbfacc6b07d107e5db71e353ded5f6abd\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\user\.android\build-cache\0f659ef4cb6515608a9cafa7a2f6c9d9b93ee1c5\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\user\.android\build-cache\80af7f93264aa6acd4bde01a49fd808602d6a669\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\user\.android\build-cache\aab4502e351ccce4f1520b0ccd5a7f5ea14bbc93\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\user\.android\build-cache\bace7c392038832dbf1a181656a67aa240dec49f\output\AndroidManifest.xml:20:5-43
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jimmo__\.android\build-cache\606fe578b1d2b9cba1e48b1148fae774a186b88a\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jimmo__\.android\build-cache\bad9cd37e57c29ebba88d7377051d83ddbb416a6\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jimmo__\.android\build-cache\8fc3adcec98eb4ab57f9a72e1c355c9bbd40a549\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jimmo__\.android\build-cache\6ec4ed0a3a6c9f690d4b2de117fa40fcba6bc2a6\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jimmo__\.android\build-cache\4103ed4aca3c5e5d1067bda192906bfc169c920e\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jimmo__\.android\build-cache\64d8336edde8750fd6c37cd4e6c08a4cb0459705\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jimmo__\.android\build-cache\dff2b46d7d785fdfe9765dae757471ff058ac0ec\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jimmo__\.android\build-cache\d417b853fa9362cd285f031102a6c5a333bfdd6a\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jimmo__\.android\build-cache\929582fc68a3570300ac07b77bff186d5c80d3b9\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jimmo__\.android\build-cache\61b5cac6daa8f4fcfb06b03c6e7b02f12464564a\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jimmo__\.android\build-cache\4c65960891c0fc68ef7a38df4751a59121504a0e\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jimmo__\.android\build-cache\0aac740a36af5b992d009f6182264f0eab769732\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jimmo__\.android\build-cache\615ceab27b8eca0f55c6bd037b04aa85d2a9703b\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jimmo__\.android\build-cache\f57936e887486578a54b74e292b05bed21d25a08\output\AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\user\.android\build-cache\65a437f9bb626b58c1ae9e4ae15fff5b389e2559\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Jimmo__\.android\build-cache\bad9cd37e57c29ebba88d7377051d83ddbb416a6\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:7:9-38
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:7:9-38
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:6:9-35
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:6:9-35
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:9:5-65
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:9:22-62
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:9:22-62
 uses-feature#android.hardware.camera
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:11:5-60
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:11:5-60
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:11:19-57
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:11:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:12:5-70
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:12:5-70
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:12:19-67
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:12:19-67
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:14:5-81
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:14:5-81
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:14:22-78
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:14:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:15:5-75
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:15:5-75
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:15:22-72
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:15:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:16:5-80
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:16:5-80
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:16:22-77
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:16:22-77
 application
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:18:5-67:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.android\build-cache\1705cd4ab4f236c90fa698325aa03b855b864e16\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\user\.android\build-cache\65a437f9bb626b58c1ae9e4ae15fff5b389e2559\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\user\.android\build-cache\cbe7e0ef1fdc9f07a18ccee8f24fa69fc1e742cc\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\user\.android\build-cache\12dd7f92d22ef03a330e0d6a192dd7f98f1c7b72\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\user\.android\build-cache\7e686bc4e546bdebb803b662458b745a14dcbfda\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\user\.android\build-cache\16a679991c6263921d8b2e6f8c9e67d3a427c15c\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\user\.android\build-cache\0210543d8a64cb1bde1a7ea5e89215e2ffcdb839\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\user\.android\build-cache\a088fd829698e7b9920e4a058864b9ebbde0dcac\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\user\.android\build-cache\a6576bebb519a2af8d718aff9ab31a291d1f420a\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\user\.android\build-cache\c694b46bbfacc6b07d107e5db71e353ded5f6abd\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\user\.android\build-cache\80af7f93264aa6acd4bde01a49fd808602d6a669\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\user\.android\build-cache\aab4502e351ccce4f1520b0ccd5a7f5ea14bbc93\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\user\.android\build-cache\bace7c392038832dbf1a181656a67aa240dec49f\output\AndroidManifest.xml:26:5-20
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:18:5-67:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jimmo__\.android\build-cache\606fe578b1d2b9cba1e48b1148fae774a186b88a\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jimmo__\.android\build-cache\bad9cd37e57c29ebba88d7377051d83ddbb416a6\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jimmo__\.android\build-cache\8fc3adcec98eb4ab57f9a72e1c355c9bbd40a549\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jimmo__\.android\build-cache\6ec4ed0a3a6c9f690d4b2de117fa40fcba6bc2a6\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jimmo__\.android\build-cache\4103ed4aca3c5e5d1067bda192906bfc169c920e\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jimmo__\.android\build-cache\64d8336edde8750fd6c37cd4e6c08a4cb0459705\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jimmo__\.android\build-cache\dff2b46d7d785fdfe9765dae757471ff058ac0ec\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jimmo__\.android\build-cache\d417b853fa9362cd285f031102a6c5a333bfdd6a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jimmo__\.android\build-cache\929582fc68a3570300ac07b77bff186d5c80d3b9\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jimmo__\.android\build-cache\61b5cac6daa8f4fcfb06b03c6e7b02f12464564a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jimmo__\.android\build-cache\0aac740a36af5b992d009f6182264f0eab769732\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jimmo__\.android\build-cache\615ceab27b8eca0f55c6bd037b04aa85d2a9703b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jimmo__\.android\build-cache\f57936e887486578a54b74e292b05bed21d25a08\output\AndroidManifest.xml:26:5-20
 	android:label
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:21:9-41
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:21:9-41
 	android:supportsRtl
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:23:9-35
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:23:9-35
 	android:roundIcon
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:22:9-43
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:22:9-43
 	android:allowBackup
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:19:9-35
 	android:icon
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:20:9-38
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:20:9-38
 	android:theme
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:24:9-40
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:24:9-40
 activity#com.spoid.CameraActivity
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:26:9-29:20
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:26:9-29:20
 	android:screenOrientation
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:27:13-50
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:27:13-50
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:26:19-49
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:26:19-49
 activity#com.spoid.CombinationActivity
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:30:9-38:20
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:30:9-38:20
 	android:screenOrientation
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:31:13-50
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:31:13-50
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:30:19-54
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:30:19-54
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:33:13-36:29
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:33:13-36:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:35:17-77
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:35:27-74
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:35:27-74
 activity#com.spoid.SplashActivity
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:39:9-44:20
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:39:9-44:20
 	android:screenOrientation
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:41:13-50
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:41:13-50
 	android:theme
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:42:13-72
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:42:13-72
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:40:13-43
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:40:13-43
 activity#com.spoid.JoinActivity
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:46:9-49:20
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:46:9-49:20
 	android:screenOrientation
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:47:13-50
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:47:13-50
 	android:theme
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:48:13-72
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:48:13-72
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:46:19-47
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:46:19-47
 activity#com.spoid.LoginActivity
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:51:9-56:20
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:51:9-56:20
 	android:screenOrientation
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:52:13-50
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:52:13-50
 	android:theme
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:53:13-72
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:53:13-72
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:51:19-48
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:51:19-48
 activity#com.spoid.UndrBarActivity
-ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:58:9-65:20
+ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:58:9-65:20
 	android:screenOrientation
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:60:13-50
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:60:13-50
 	android:theme
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:61:13-56
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:61:13-56
 	android:name
-		ADDED from C:\Users\user\Documents\Spoid\app\src\main\AndroidManifest.xml:59:13-44
+		ADDED from C:\Users\Jimmo__\Desktop\HackerTon\K-HackerTon\Android\Spoid\app\src\main\AndroidManifest.xml:59:13-44
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\user\.android\build-cache\65a437f9bb626b58c1ae9e4ae15fff5b389e2559\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\user\.android\build-cache\cbe7e0ef1fdc9f07a18ccee8f24fa69fc1e742cc\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\user\.android\build-cache\12dd7f92d22ef03a330e0d6a192dd7f98f1c7b72\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\user\.android\build-cache\7e686bc4e546bdebb803b662458b745a14dcbfda\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\user\.android\build-cache\16a679991c6263921d8b2e6f8c9e67d3a427c15c\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\user\.android\build-cache\0210543d8a64cb1bde1a7ea5e89215e2ffcdb839\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\user\.android\build-cache\a088fd829698e7b9920e4a058864b9ebbde0dcac\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\user\.android\build-cache\a6576bebb519a2af8d718aff9ab31a291d1f420a\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\user\.android\build-cache\c694b46bbfacc6b07d107e5db71e353ded5f6abd\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\user\.android\build-cache\0f659ef4cb6515608a9cafa7a2f6c9d9b93ee1c5\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\user\.android\build-cache\80af7f93264aa6acd4bde01a49fd808602d6a669\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\user\.android\build-cache\aab4502e351ccce4f1520b0ccd5a7f5ea14bbc93\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\user\.android\build-cache\bace7c392038832dbf1a181656a67aa240dec49f\output\AndroidManifest.xml:22:5-24:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\Jimmo__\.android\build-cache\bad9cd37e57c29ebba88d7377051d83ddbb416a6\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jimmo__\.android\build-cache\8fc3adcec98eb4ab57f9a72e1c355c9bbd40a549\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jimmo__\.android\build-cache\6ec4ed0a3a6c9f690d4b2de117fa40fcba6bc2a6\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jimmo__\.android\build-cache\4103ed4aca3c5e5d1067bda192906bfc169c920e\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jimmo__\.android\build-cache\64d8336edde8750fd6c37cd4e6c08a4cb0459705\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jimmo__\.android\build-cache\dff2b46d7d785fdfe9765dae757471ff058ac0ec\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jimmo__\.android\build-cache\d417b853fa9362cd285f031102a6c5a333bfdd6a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jimmo__\.android\build-cache\929582fc68a3570300ac07b77bff186d5c80d3b9\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jimmo__\.android\build-cache\61b5cac6daa8f4fcfb06b03c6e7b02f12464564a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jimmo__\.android\build-cache\4c65960891c0fc68ef7a38df4751a59121504a0e\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jimmo__\.android\build-cache\0aac740a36af5b992d009f6182264f0eab769732\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jimmo__\.android\build-cache\615ceab27b8eca0f55c6bd037b04aa85d2a9703b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jimmo__\.android\build-cache\f57936e887486578a54b74e292b05bed21d25a08\output\AndroidManifest.xml:22:5-24:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\user\.android\build-cache\65a437f9bb626b58c1ae9e4ae15fff5b389e2559\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Jimmo__\.android\build-cache\bad9cd37e57c29ebba88d7377051d83ddbb416a6\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\user\.android\build-cache\65a437f9bb626b58c1ae9e4ae15fff5b389e2559\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Jimmo__\.android\build-cache\bad9cd37e57c29ebba88d7377051d83ddbb416a6\output\AndroidManifest.xml:26:9-47

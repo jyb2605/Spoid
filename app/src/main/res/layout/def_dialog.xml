@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="100dp"
+    android:layout_height="120dp">
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="475dp"
+        android:layout_height="180dp"
+        android:background="@layout/text_background"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="23dp"
+            android:layout_height="18.5dp"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            android:textColor="#d9d9d9"
+            android:textSize="12.5sp"
+            android:background="#ffffff"
+            android:text="X" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

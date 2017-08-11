@@ -22,22 +22,32 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".CameraActivity"
-            android:screenOrientation="landscape"></activity>
-        <activity
-            android:name=".CombinationActivity"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".CameraActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name=".CombinationActivity"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+        <activity android:name=".JoinActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        </activity>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -48,8 +58,8 @@
             android:name=".UndrBarActivity"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar">
-
         </activity>
+
     </application>
 
 </manifest>

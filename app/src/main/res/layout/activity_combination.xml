@@ -1,135 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
     android:orientation="vertical">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textColor="#585858"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="68dp"
-            android:layout_marginLeft="83.5dp"
-            android:text="아이템 선택하기" />
-
-        <TextView
-            android:id="@+id/txt2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textColor="#585858"
-            android:gravity="center_horizontal"
-            android:layout_toEndOf="@+id/txt1"
-            android:layout_marginTop="68dp"
-            android:layout_marginLeft="475dp"
-            android:text="도구 선택하기"
-            />
-    </RelativeLayout>
-
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp"
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp">
 
-        >
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/linearLayout3"
+                android:layout_marginBottom="6dp"
+                android:gravity="center_horizontal"
+                android:text="아이템 선택하기"
+                android:textColor="#585858"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:id="@+id/element2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/e1_img"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/btn_add" />
+
+                <TextView
+                    android:id="@+id/e1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="2.5sp"
+                    android:text="조합하고 싶은 아이템을\n골라 넣어주세요."
+                    android:textColor="#585858"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/element1"
-            android:orientation="vertical"
-            android:layout_width="240dp"
-            android:layout_height="240dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:layout_marginStart="15dp"
             android:background="@drawable/gray_border"
-            android:layout_marginLeft="79dp">
-       
+            android:orientation="vertical">
+
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/btn_add"
+                android:id="@+id/e2_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="72dp"/>
+                android:layout_marginTop="30dp"
+                android:src="@drawable/btn_add" />
 
             <TextView
+                android:id="@+id/e2_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:textColor="#585858"
-                android:lineSpacingExtra="2.5sp"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="25dp"
                 android:layout_gravity="center_horizontal"
-                android:text="조합하고 싶은 아이템을\n골라 넣어주세요."/>
-       
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="2.5sp"
+                android:text="조합하고 싶은 아이템을\n골라 넣어주세요."
+                android:textColor="#585858"
+                android:textSize="12sp" />
+
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/element2"
-            android:orientation="vertical"
-            android:layout_width="240dp"
-            android:layout_height="240dp"
-            android:background="@drawable/gray_border"
-            android:layout_marginLeft="36dp">
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/btn_add"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="72dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:textColor="#585858"
-                android:lineSpacingExtra="2.5sp"
+                android:layout_marginBottom="6dp"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="25dp"
-                android:layout_gravity="center_horizontal"
-                android:text="조합하고 싶은 아이템을\n골라 넣어주세요."/>
+                android:text="도구 선택하기"
+                android:textColor="#585858"
+                android:textSize="10sp" />
 
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/up"
+                    android:layout_width="match_parent"
+                    android:layout_height="17.5dp"
+                    app:srcCompat="@drawable/btn_add" />
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:scrollbars="none"
+                    tool:listitem="@layout/tool_item" />
+
+
+                <ImageView
+                    android:id="@+id/down"
+                    android:layout_width="match_parent"
+                    android:layout_height="17.5dp"
+                    app:srcCompat="@drawable/btn_add" />
+            </LinearLayout>
         </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="240dp"
-            android:layout_marginLeft="60dp"
-            android:orientation="vertical"
-            android:background="@drawable/gray_border">
-
-
-            <ImageView
-                android:id="@+id/up"
-                android:layout_width="match_parent"
-                android:layout_height="17.5dp"
-                app:srcCompat="@drawable/btn_add" />
-
-            <ImageView
-                android:id="@+id/down"
-                android:layout_width="match_parent"
-                android:layout_height="17.5dp"
-                app:srcCompat="@drawable/btn_add" />
-
-            <ListView
-                android:id="@+id/listview"
-                android:layout_width="match_parent"
-                android:layout_height="205dp"
-                android:scrollbars="none" />
-        </LinearLayout>
-
 
     </LinearLayout>
 
-</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#436cff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5.5dp"
+        android:paddingTop="7dp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+</RelativeLayout>

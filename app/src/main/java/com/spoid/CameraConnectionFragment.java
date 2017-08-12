@@ -46,17 +46,23 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.annotation.RequiresApi;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -68,7 +74,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
@@ -79,7 +84,14 @@ public class CameraConnectionFragment extends Fragment {
   static ArrayList<Item> items_list;
   static ResultAdapter resultAdapter;
 
+  Context mContext;
+  static ArrayList<Item> hlist;
+  static SectionListDataAdapter itemAdapter;
+  RecyclerView recyclerView;
+  RecyclerView.Adapter Adapter;
+  RecyclerView.LayoutManager layoutManager;
 
+  private DialogDefActivity def_dialog;
 
   private static final Logger LOGGER = new Logger();
 
@@ -333,7 +345,73 @@ public class CameraConnectionFragment extends Fragment {
       public void onGlobalLayout() {
 
 
+        hlist = new ArrayList<Item>();
+        mContext = container.getContext();
+        recyclerView = (RecyclerView) container.findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+//        hlist.add(new Item(R.drawable.group_7, "나무"));
+//        hlist.add(new Item(R.drawable.group_8, "꽃"));
+//        hlist.add(new Item(R.drawable.group_9, "볼펜"));
+//        hlist.add(new Item(R.drawable.group_13, "안경"));
+//        hlist.add(new Item(R.drawable.group_14, "핸드폰"));
+//        hlist.add(new Item(R.drawable.group_15, "종이"));
+//        hlist.add(new Item(R.drawable.group_7, "나무"));
+//        hlist.add(new Item(R.drawable.group_8, "꽃"));
+//        hlist.add(new Item(R.drawable.group_9, "볼펜"));
+//        hlist.add(new Item(R.drawable.group_13, "안경"));
+//        hlist.add(new Item(R.drawable.group_14, "핸드폰"));
+//        hlist.add(new Item(R.drawable.group_15, "종이"));
+//        hlist.add(new Item(R.drawable.group_7, "나무"));
+//        hlist.add(new Item(R.drawable.group_8, "꽃"));
+//        hlist.add(new Item(R.drawable.group_9, "볼펜"));
+//        hlist.add(new Item(R.drawable.group_13, "안경"));
+//        hlist.add(new Item(R.drawable.group_14, "핸드폰"));
+//        hlist.add(new Item(R.drawable.group_15, "종이"));
 
+        itemAdapter = new SectionListDataAdapter(mContext, hlist);
+        recyclerView.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView.setAdapter(itemAdapter);
+
+        final GestureDetector gestureDetector = new GestureDetector(mContext,new GestureDetector.SimpleOnGestureListener()
+        {
+          @Override
+          public boolean onSingleTapUp(MotionEvent e)
+          {
+            return true;
+          }
+        });
+
+        recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener()
+        {
+          String TAG = "LOG";
+          @Override
+          public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e)
+          {
+            Log.d(TAG,"onInterceptTouchEvent");
+            View child = rv.findChildViewUnder(e.getX(), e.getY());
+            if(child!=null&&gestureDetector.onTouchEvent(e))
+            {
+              Log.d(TAG, "getChildAdapterPosition=>" + rv.getChildAdapterPosition(child));
+              Log.d(TAG,"getChildLayoutPosition=>"+rv.getChildLayoutPosition(child));
+              Log.d(TAG,"getChildViewHolder=>" + rv.getChildViewHolder(child));
+
+            }
+            return false;
+          }
+
+          @Override
+          public void onTouchEvent(RecyclerView rv, MotionEvent e)
+          {
+            Log.d(TAG,"onTouchEvent");
+
+          }
+
+          @Override
+          public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept)
+          {
+            Log.d(TAG,"onRequestDisallowInterceptTouchEvent");
+          }
+        });
 
 
 
@@ -352,12 +430,12 @@ public class CameraConnectionFragment extends Fragment {
         sum = (Button) container.findViewById(R.id.sum);
         quest = (Button) container.findViewById(R.id.quest);
 
-        quest.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-            startActivity(new Intent(container.getContext(), UndrBarActivity.class));
-          }
-        });
+//        quest.setOnClickListener(new View.OnClickListener() {
+//          @Override
+//          public void onClick(View v) {
+//            startActivity(new Intent(container.getContext(), UndrBarActivity.class));
+//          }
+//        });
         sum.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
@@ -391,6 +469,9 @@ public class CameraConnectionFragment extends Fragment {
 
 
 
+
+
+
     return inflater.inflate(R.layout.camera_connection_fragment, container, false);
   }
 
@@ -409,6 +490,14 @@ public class CameraConnectionFragment extends Fragment {
 
     scoreListView = (ListView) view.findViewById(R.id.resultsListView);
     scoreListView.setAdapter(resultAdapter);
+
+    scoreListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+      @Override
+      public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        hlist.add(new Item(items_list.get(position).img_src, items_list.get(position).name));
+        itemAdapter.notifyDataSetChanged();
+      }
+    });
   }
 
   @Override
@@ -787,6 +876,74 @@ public class CameraConnectionFragment extends Fragment {
       item_title.setText(data_list.get(position).name);
 
       return convertView;
+    }
+  }
+
+
+  public class SectionListDataAdapter extends RecyclerView.Adapter<SectionListDataAdapter.SingleItemRowHolder> {
+
+    private ArrayList<Item> itemsList;
+    private Context mContext;
+
+    public SectionListDataAdapter(Context context, ArrayList<Item> itemsList) {
+      this.itemsList = itemsList;
+      this.mContext = context;
+    }
+
+    @Override
+    public SectionListDataAdapter.SingleItemRowHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+      View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item, null);
+      SectionListDataAdapter.SingleItemRowHolder mh = new SectionListDataAdapter.SingleItemRowHolder(v);
+      return mh;
+    }
+
+    @Override
+    public void onBindViewHolder(SectionListDataAdapter.SingleItemRowHolder holder, int i) {
+      Item singleItem = itemsList.get(i);
+      holder.title.setText(singleItem.getName());
+      holder.image.setImageResource(singleItem.getImg());
+    }
+
+    @Override
+    public int getItemCount() {
+      return (null != itemsList ? itemsList.size() : 0);
+    }
+
+    public class SingleItemRowHolder extends RecyclerView.ViewHolder {
+      protected TextView title;
+      protected ImageView image;
+      public SingleItemRowHolder(final View view) {
+        super(view);
+        this.title = (TextView) view.findViewById(R.id.textView);
+        this.image = (ImageView) view.findViewById(R.id.imageView2);
+
+        image.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+            if (Gloval.getElement1State()) {
+
+            } else if (Gloval.getElement2State()) {
+
+            } else {
+              // 다이어로그 출력
+              def_dialog = new DialogDefActivity(mContext,
+                      "의자",
+                      "나무",
+                      "못",
+                      "톱",
+                      "의자(椅子)는 사람이 앉는데에 쓰는 가구이다.\n교상(交床)이라고도 한다.",
+                      "2017.05.28 조합으로 획득");
+              def_dialog.show();
+            }
+          }
+        });
+        view.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+            Toast.makeText(v.getContext(), title.getText(), Toast.LENGTH_SHORT).show();
+          }
+        });
+      }
     }
   }
 }

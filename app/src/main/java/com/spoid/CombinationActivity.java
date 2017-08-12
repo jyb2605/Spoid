@@ -62,7 +62,7 @@ public class CombinationActivity extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                CameraConnectionFragment.hlist.add(new Item(R.drawable.group_14, "스마트폰"));
+                CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "의자"));
                 CameraConnectionFragment.itemAdapter.notifyDataSetChanged();
 
             }

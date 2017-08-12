@@ -3,14 +3,12 @@ package com.spoid;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * Created by DANBI on 2017-08-10.
@@ -21,7 +19,6 @@ public class LoginActivity extends AppCompatActivity {
     private void DialogProgress() { // 로그인 다이얼로그
         ProgressDialog dialog = ProgressDialog.show(LoginActivity.this, "", "로그인 중입니다", true);
     }
-
 
 
     @Override
@@ -36,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         final TextView resister = (TextView) findViewById(R.id.textView4);//회원가입
 
 
-            View.OnClickListener listener1 = new View.OnClickListener() { //로그인 성공 후 카메라 메인화면
+        View.OnClickListener listener1 = new View.OnClickListener() { //로그인 성공 후 카메라 메인화면
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
@@ -54,12 +51,11 @@ public class LoginActivity extends AppCompatActivity {
 
         };
 
-
+        button.setOnClickListener(listener1);
         resister.setOnClickListener(listener2);
 
 
-
-}
+    }
 
 
 }

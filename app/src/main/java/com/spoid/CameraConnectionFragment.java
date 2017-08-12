@@ -25,6 +25,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.ImageFormat;
 import android.graphics.Matrix;
@@ -98,6 +99,8 @@ public class CameraConnectionFragment extends Fragment {
 
 
   Button indicator;
+  Button sum;
+  Button quest;
   LinearLayout item_list;
   int item_list_width;
   boolean isListOpen=false;
@@ -328,6 +331,15 @@ public class CameraConnectionFragment extends Fragment {
     container.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
       @Override
       public void onGlobalLayout() {
+
+
+
+
+
+
+
+
+
         container.getViewTreeObserver().removeOnGlobalLayoutListener(this);
         indicator = (Button) container.findViewById(R.id.indicator);
         item_list = (LinearLayout) container.findViewById(R.id.item_list);
@@ -336,6 +348,23 @@ public class CameraConnectionFragment extends Fragment {
 //        parse_layout = (LinearLayout) container.findViewById(R.id.parse_list);
 
         Log.e("width", String.valueOf(item_list_width));
+
+        sum = (Button) container.findViewById(R.id.sum);
+        quest = (Button) container.findViewById(R.id.quest);
+
+        quest.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+            startActivity(new Intent(container.getContext(), UndrBarActivity.class));
+          }
+        });
+        sum.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+            startActivity(new Intent(container.getContext(), CombinationActivity.class));
+          }
+        });
+
         indicator.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {

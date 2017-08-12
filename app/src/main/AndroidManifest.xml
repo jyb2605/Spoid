@@ -22,11 +22,13 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-    <activity android:name=".CameraActivity"
+        <activity
+            android:name=".CameraActivity"
             android:screenOrientation="landscape">
 
         </activity>
-        <activity android:name=".CombinationActivity"
+        <activity
+            android:name=".CombinationActivity"
             android:screenOrientation="landscape">
 
         </activity>
@@ -38,16 +40,20 @@
 
         </activity>
 
-        <activity android:name=".JoinActivity"
+        <activity
+            android:name=".JoinActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".LoginActivity"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        </activity>
 
-        <activity android:name=".LoginActivity"
-            android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            >
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity
@@ -55,10 +61,10 @@
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
     </application>
 

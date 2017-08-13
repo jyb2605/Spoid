@@ -63,14 +63,24 @@ public class RecognitionScoreView extends View {
             CameraConnectionFragment.items_list.clear();
 
             for (final Recognition recog : results) {
-                if (recog.getConfidence() > 0.2) {
+                if (recog.getConfidence() > 0.3) {
                     Log.e("recog", "ID : " + recog.getId() + ", TITLE : " + recog.getTitle() + ", recognition rate : " + recog.getConfidence());
+
+
+
 
                     switch (Integer.valueOf(recog.getId())) {
                         case 543:
+                            CameraConnectionFragment.items_list.add(new Item("키보드", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
+                            break;
+                        case 552:
                             CameraConnectionFragment.items_list.add(new Item("노트북", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
                             break;
+                        case 310:
+                            CameraConnectionFragment.items_list.add(new Item("의자", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
+                            break;
                         default:
+                            CameraConnectionFragment.items_list.add(new Item(recog.getTitle(), "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
                             break;
                     }
 

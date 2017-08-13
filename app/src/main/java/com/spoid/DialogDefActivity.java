@@ -2,10 +2,7 @@ package com.spoid;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -58,6 +55,17 @@ public class DialogDefActivity extends Dialog{
         mContentView1_3 = (TextView) findViewById(R.id.txt_content1_3);
         mContentView2 = (TextView) findViewById(R.id.txt_content2);
         mContentView3 = (TextView) findViewById(R.id.txt_content3);
+
+        Button btn_dicomp = (Button) findViewById(R.id.btn_dicomp);
+
+        btn_dicomp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "나무판자"));
+                CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "못"));
+                CameraConnectionFragment.itemAdapter.notifyDataSetChanged();
+            }
+        });
 
 
         // 제목,내용 세팅

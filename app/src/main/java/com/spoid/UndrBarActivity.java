@@ -21,7 +21,7 @@ public class UndrBarActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     RecyclerView.Adapter Adapter;
     RecyclerView.LayoutManager layoutManager;
-
+    private DialogDefActivity def_dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +96,7 @@ public class UndrBarActivity extends AppCompatActivity {
             protected ImageView image;
 
 
-            public SingleItemRowHolder(View view) {
+            public SingleItemRowHolder(final View view) {
                 super(view);
 
                 this.title = (TextView) view.findViewById(R.id.textView);
@@ -113,6 +113,14 @@ public class UndrBarActivity extends AppCompatActivity {
                         }
                         else{
                             // 다이어로그 출력
+                            def_dialog = new DialogDefActivity(UndrBarActivity.this,
+                                    "의자",
+                                    "나무",
+                                    "못",
+                                    "톱",
+                                    "의자(椅子)는 사람이 앉는데에 쓰는 가구이다.\n교상(交床)이라고도 한다.",
+                                    "2017.05.28 조합으로 획득");
+                            def_dialog.show();
                         }
                     }
                 });
@@ -123,8 +131,16 @@ public class UndrBarActivity extends AppCompatActivity {
 
                         Toast.makeText(v.getContext(), title.getText(), Toast.LENGTH_SHORT).show();
 
+
                     }
+
+
+
+
                 });
+
+
+
 
 
             }
@@ -134,3 +150,5 @@ public class UndrBarActivity extends AppCompatActivity {
 
     }
 }
+
+

@@ -29,6 +29,6 @@ public class DialogCmpActivity extends Dialog {
     }
 
     public DialogCmpActivity(Context context) {
-            super(context, android.R.style.Theme_Translucent_NoTitleBar);
+        super(context, android.R.style.Theme_Translucent_NoTitleBar);
         }
 }

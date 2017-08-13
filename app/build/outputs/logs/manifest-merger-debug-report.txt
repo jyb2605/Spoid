@@ -103,47 +103,47 @@ ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:29:9-
 	android:name
 		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:29:19-54
 activity#com.spoid.SplashActivity
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:33:9-39:20
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:33:9-42:20
 	android:screenOrientation
 		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:35:13-50
 	android:theme
 		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:36:13-72
 	android:name
 		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:34:13-43
-activity#com.spoid.JoinActivity
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:41:9-44:20
-	android:screenOrientation
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:42:13-50
-	android:theme
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:43:13-72
-	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:41:19-47
-activity#com.spoid.LoginActivity
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:46:9-51:20
-	android:screenOrientation
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:47:13-50
-	android:theme
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:48:13-72
-	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:46:19-48
-activity#com.spoid.UndrBarActivity
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:53:9-62:20
-	android:screenOrientation
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:55:13-50
-	android:theme
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:56:13-56
-	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:54:13-44
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:58:13-61:29
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:37:13-40:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:59:17-69
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:59:25-66
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:60:17-77
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:60:27-74
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:39:27-74
+activity#com.spoid.JoinActivity
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:44:9-47:20
+	android:screenOrientation
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:45:13-50
+	android:theme
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:46:13-72
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:44:19-47
+activity#com.spoid.LoginActivity
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:49:9-54:20
+	android:screenOrientation
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:50:13-50
+	android:theme
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:51:13-72
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:49:19-48
+activity#com.spoid.UndrBarActivity
+ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:56:9-62:20
+	android:screenOrientation
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:58:13-50
+	android:theme
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:59:13-56
+	android:name
+		ADDED from C:\Users\DANBI\Documents\Spoid\app\src\main\AndroidManifest.xml:57:13-44
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] C:\Users\DANBI\.android\build-cache\a76f4986cf5a7c2f58f8bdc8ba0f22f628334728\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\DANBI\.android\build-cache\54b27fb9bc49762adea972d05ee7354a6df1a742\output\AndroidManifest.xml:25:5-27:34

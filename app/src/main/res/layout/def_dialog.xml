@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="475dp"
+    android:layout_width="430dp"
     android:layout_height="180dp"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="#ffffff">
+    android:background="@layout/text_background">
 
 
     <LinearLayout
@@ -13,10 +13,11 @@
 
 
         <LinearLayout
-            android:layout_width="475dp"
+            android:layout_width="430dp"
             android:layout_height="180dp"
             android:background="@layout/text_background"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
 
             <ImageView
                 android:id="@+id/def_img"
@@ -144,16 +145,14 @@
                     android:layout_gravity="bottom"
                     android:layout_marginTop="9dp"/>
             </LinearLayout>
+
             <Button
-                android:id="@+id/btn_dicomp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="20dp"
-                android:background="@layout/text_background"
-                android:backgroundTint="@color/colorPrimary"
-                android:text="분해하기"
-                android:textColor="#ffffff"
-                android:textStyle="bold"/>
+                android:id="@+id/defbtn"
+                android:layout_width="28.5dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/decmp" />
         </LinearLayout>
 
 

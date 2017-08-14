@@ -32,6 +32,7 @@ public class DialogDefActivity extends Dialog{
     private String mContent2;
     private String mContent3;
 
+   public DialogDeCmpActivity decmpdialog = new DialogDeCmpActivity(getContext());
 
 
     @Override
@@ -56,14 +57,13 @@ public class DialogDefActivity extends Dialog{
         mContentView2 = (TextView) findViewById(R.id.txt_content2);
         mContentView3 = (TextView) findViewById(R.id.txt_content3);
 
-        Button btn_dicomp = (Button) findViewById(R.id.btn_dicomp);
+        Button defbtn = (Button) findViewById(R.id.defbtn);
 
-        btn_dicomp.setOnClickListener(new View.OnClickListener() {
+        defbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "나무판자"));
-                CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "못"));
-                CameraConnectionFragment.itemAdapter.notifyDataSetChanged();
+                decmpdialog.show();
+
             }
         });
 
@@ -81,7 +81,7 @@ public class DialogDefActivity extends Dialog{
 
     public DialogDefActivity(Context context, String txt_title , String txt_content1_1, String txt_content1_2,
                              String txt_content1_3, String txt_content2, String txt_content3) {
-        super(context , android.R.style.Theme_Translucent_NoTitleBar);
+        super(context, android.R.style.Theme_Translucent_NoTitleBar);
         this.mTitle=txt_title;
         this.mContent1_1=txt_content1_1;
         this.mContent1_2=txt_content1_2;

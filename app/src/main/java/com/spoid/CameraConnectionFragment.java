@@ -920,11 +920,11 @@ public class CameraConnectionFragment extends Fragment {
         image.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-            if (Gloval.getElement1State()) {
-
-            } else if (Gloval.getElement2State()) {
-
-            } else {
+//            if (Gloval.getElement1State()) {
+//
+//            } else if (Gloval.getElement2State()) {
+//
+//            } else {
               // 다이어로그 출력
               def_dialog = new DialogDefActivity(mContext,
                       "의자",
@@ -934,15 +934,10 @@ public class CameraConnectionFragment extends Fragment {
                       "의자(椅子)는 사람이 앉는데에 쓰는 가구이다.\n교상(交床)이라고도 한다.",
                       "2017.05.28 조합으로 획득");
               def_dialog.show();
-            }
+           // }
           }
         });
-        view.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-            Toast.makeText(v.getContext(), title.getText(), Toast.LENGTH_SHORT).show();
-          }
-        });
+
       }
     }
   }

@@ -30,14 +30,13 @@ public class CombinationActivity extends Activity {
 
 
     ViewGroup element1;
-
     ViewGroup element2;
-
     ImageView e1_img;
     ImageView e2_img;
     TextView e1_name;
     TextView e2_name;
 
+   public static Context con;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -52,6 +51,7 @@ public class CombinationActivity extends Activity {
         e2_img = (ImageView) findViewById(R.id.e2_img);
         e1_name = (TextView) findViewById(R.id.e1_name);
         e2_name = (TextView) findViewById(R.id.e2_name);
+        con = CombinationActivity.this;
 
 
         ListView listView;
@@ -62,8 +62,8 @@ public class CombinationActivity extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "의자"));
-                CameraConnectionFragment.itemAdapter.notifyDataSetChanged();
+                DialogCmpActivity cmpdialog = new DialogCmpActivity(parent.getContext());
+                cmpdialog.show();
 
             }
         });

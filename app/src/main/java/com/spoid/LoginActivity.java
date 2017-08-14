@@ -19,8 +19,9 @@ public class LoginActivity extends AppCompatActivity {
 
     //다이얼로그------------------------------
     private DialogCmpActivity cmp_dialog;
-    private DialogCfmActivity cfm_dialog;
     private DialogDeCmpActivity decfm_dialog;
+    private DialogCmpCfmActivity cmpCfm_dialog;
+    private DialogDeCmpCfmActivity decmpCfm_dialog;
     //----------------------------------------------
 
     private void DialogProgress() { // 로그인 다이얼로그
@@ -50,17 +51,17 @@ public class LoginActivity extends AppCompatActivity {
         };
 
 
-        //  들어가야하는 위치에 다이얼로그 걸어주세용~~ ----------------------
+//        //  들어가야하는 위치에 다이얼로그 걸어주세용~~ ----------------------
 //        View.OnClickListener listener1 = new View.OnClickListener() { //cfm dialog
 //            @Override
 //            public void onClick(View v) {
 //                // TODO Auto-generated method stub
-//                decfm_dialog = new DialogDeCmpActivity(LoginActivity.this);
-//                decfm_dialog.show();
+//                decmpCfm_dialog = new DialogDeCmpCfmActivity(LoginActivity.this);
+//                decmpCfm_dialog.show();
 //            }
 //
 //        };
-        // 들어가야하는 위치에 다이얼로그 걸어주세용~~ -----------------------
+//        // 들어가야하는 위치에 다이얼로그 걸어주세용~~ -----------------------
 
 
 

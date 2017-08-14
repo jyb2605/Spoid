@@ -7,7 +7,6 @@ import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.Toast;
 
 import static com.spoid.R.id.decmpbtn;
 
@@ -16,7 +15,7 @@ import static com.spoid.R.id.decmpbtn;
  */
 
 public class DialogDeCmpActivity extends Dialog {
-
+    public DialogDeCmpCfmActivity decmpcfm = new DialogDeCmpCfmActivity(getContext());
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +36,7 @@ public class DialogDeCmpActivity extends Dialog {
                 CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "나무판자"));
                 CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "못"));
                 CameraConnectionFragment.itemAdapter.notifyDataSetChanged();
-                Toast.makeText(getContext(), "의자가 분해되어 나무판자와 못이 생성되었습니다.", Toast.LENGTH_SHORT).show();
+                decmpcfm.show();
 
             }
         });

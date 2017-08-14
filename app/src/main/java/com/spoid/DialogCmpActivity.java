@@ -19,7 +19,7 @@ import static com.spoid.CombinationActivity.con;
 public class DialogCmpActivity extends Dialog {
     Button cmpbtn = (Button) findViewById(R.id.cmpbtn);
 
-    DialogCfmActivity cfmdialog = new DialogCfmActivity(con);
+    DialogCmpCfmActivity cfmdialog = new DialogCmpCfmActivity(con);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -104,7 +104,7 @@
             android:id="@+id/cmp_tool"
             android:layout_width="25dp"
             android:layout_height="20dp"
-            android:text="망치"
+            android:text="톱"
             android:textSize="10dp"
             android:textStyle="bold"
             android:gravity="center"

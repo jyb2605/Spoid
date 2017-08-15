@@ -3,6 +3,7 @@ package com.spoid;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
@@ -25,7 +26,28 @@ public class LoginActivity extends AppCompatActivity {
     //----------------------------------------------
 
     private void DialogProgress() { // 로그인 다이얼로그
-        ProgressDialog dialog = ProgressDialog.show(LoginActivity.this, "", "로그인 중입니다", true);
+        final ProgressDialog dialog = ProgressDialog.show(LoginActivity.this, "", "로그인 중입니다", true);
+        dialog.show();
+        final Handler handler = new Handler();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        dialog.dismiss();
+                        finish();
+                        startActivity(new Intent(LoginActivity.this, CameraActivity.class));
+                    }
+                });
+            }
+        }).start();
+
     }
 
 
@@ -45,14 +67,15 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                startActivity(new Intent(LoginActivity.this, CameraActivity.class));
+
+                DialogProgress();
             }
 
         };
 
 
 //        //  들어가야하는 위치에 다이얼로그 걸어주세용~~ ----------------------
-//        View.OnClickListener listener1 = new View.OnClickListener() { //cfm dialog
+//        View.OnClickListener listener2 = new View.OnClickListener() { //cfm dialog
 //            @Override
 //            public void onClick(View v) {
 //                // TODO Auto-generated method stub

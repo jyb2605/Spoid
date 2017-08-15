@@ -62,6 +62,7 @@ public class DialogDefActivity extends Dialog{
         defbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                dismiss();
                 decmpdialog.show();
 
             }

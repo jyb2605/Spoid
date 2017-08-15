@@ -33,11 +33,12 @@ public class DialogDeCmpActivity extends Dialog {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "나무판자"));
-                CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "못"));
+                CameraConnectionFragment.hlist.remove(CameraConnectionFragment.item_position);
+                CameraConnectionFragment.hlist.add(new Item(R.drawable.icon_board, "나무판자"));
+                CameraConnectionFragment.hlist.add(new Item(R.drawable.icon_nail, "못"));
                 CameraConnectionFragment.itemAdapter.notifyDataSetChanged();
                 decmpcfm.show();
-
+                dismiss();
             }
         });
     }

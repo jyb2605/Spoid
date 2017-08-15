@@ -68,7 +68,7 @@ android:layout_gravity="bottom"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="6dp"
-                    android:background="@drawable/sum" />
+                    android:background="@drawable/sum_selector" />
 
                 <TextView
                     android:layout_width="wrap_content"

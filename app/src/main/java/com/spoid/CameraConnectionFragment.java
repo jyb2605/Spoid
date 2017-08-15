@@ -83,6 +83,7 @@ public class CameraConnectionFragment extends Fragment {
 
   static ArrayList<Item> items_list;
   static ResultAdapter resultAdapter;
+  static int item_position = 0;
 
   Context mContext;
   static ArrayList<Item> hlist;
@@ -875,6 +876,11 @@ public class CameraConnectionFragment extends Fragment {
       TextView item_title = (TextView) convertView.findViewById(R.id.item_title);
       item_title.setText(data_list.get(position).name);
 
+
+
+      ImageView item_img = (ImageView) convertView.findViewById(R.id.item_img);
+      item_img.setImageResource(data_list.get(position).getImg());
+
       return convertView;
     }
   }
@@ -893,7 +899,7 @@ public class CameraConnectionFragment extends Fragment {
     @Override
     public SectionListDataAdapter.SingleItemRowHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
       View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item, null);
-      SectionListDataAdapter.SingleItemRowHolder mh = new SectionListDataAdapter.SingleItemRowHolder(v);
+      SectionListDataAdapter.SingleItemRowHolder mh = new SectionListDataAdapter.SingleItemRowHolder(v, i);
       return mh;
     }
 
@@ -912,10 +918,11 @@ public class CameraConnectionFragment extends Fragment {
     public class SingleItemRowHolder extends RecyclerView.ViewHolder {
       protected TextView title;
       protected ImageView image;
-      public SingleItemRowHolder(final View view) {
+      public SingleItemRowHolder(final View view, final int position) {
         super(view);
         this.title = (TextView) view.findViewById(R.id.textView);
         this.image = (ImageView) view.findViewById(R.id.imageView2);
+
 
         image.setOnClickListener(new View.OnClickListener() {
           @Override
@@ -926,6 +933,7 @@ public class CameraConnectionFragment extends Fragment {
 //
 //            } else {
               // 다이어로그 출력
+            item_position = position;
               def_dialog = new DialogDefActivity(mContext,
                       "의자",
                       "나무",

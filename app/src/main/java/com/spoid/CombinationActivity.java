@@ -35,6 +35,8 @@ public class CombinationActivity extends Activity {
     ImageView e2_img;
     TextView e1_name;
     TextView e2_name;
+    static Item item_position01;
+    static Item item_position02;
 
    public static Context con;
 
@@ -138,11 +140,16 @@ public class CombinationActivity extends Activity {
 
                     if(Gloval.getElement1State()){
                         //1이 선택되어 있다면 진입
+
+                        item_position02 = CameraConnectionFragment.hlist.get(rv.getChildViewHolder(child).getPosition());
+
                         e2_img.setImageResource(CameraConnectionFragment.hlist.get(rv.getChildViewHolder(child).getPosition()).getImg());
                         e2_name.setText(CameraConnectionFragment.hlist.get(rv.getChildViewHolder(child).getPosition()).name);
                     }
                     else {
                         //1이 선택되어 있지 않다면 진입
+                        item_position01 = CameraConnectionFragment.hlist.get(rv.getChildViewHolder(child).getPosition());
+
                         e1_img.setImageResource(CameraConnectionFragment.hlist.get(rv.getChildViewHolder(child).getPosition()).getImg());
                         e1_name.setText(CameraConnectionFragment.hlist.get(rv.getChildViewHolder(child).getPosition()).name);
                     }

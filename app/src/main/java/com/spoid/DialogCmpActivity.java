@@ -6,10 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
-
-import static com.spoid.CombinationActivity.con;
 
 
 /**
@@ -17,13 +14,12 @@ import static com.spoid.CombinationActivity.con;
  */
 
 public class DialogCmpActivity extends Dialog {
-    Button cmpbtn = (Button) findViewById(R.id.cmpbtn);
-
-    DialogCmpCfmActivity cfmdialog = new DialogCmpCfmActivity(con);
+    Context con;
+    DialogCmpCfmActivity cfmdialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        cfmdialog = new DialogCmpCfmActivity(con);
 
         WindowManager.LayoutParams lpWindow = new WindowManager.LayoutParams();
         lpWindow.flags = WindowManager.LayoutParams.FLAG_DIM_BEHIND;
@@ -35,8 +31,13 @@ public class DialogCmpActivity extends Dialog {
         findViewById(R.id.cmpbtn).setOnClickListener(
                 new ImageButton.OnClickListener() {
                     public void onClick(View v) {
-                        CameraConnectionFragment.hlist.add(new Item(R.drawable.logo, "의자"));
+                        CameraConnectionFragment.hlist.remove(CombinationActivity.item_position01);
+                        CameraConnectionFragment.hlist.remove(CombinationActivity.item_position02);
+
+
+                        CameraConnectionFragment.hlist.add(new Item(R.drawable.icon_chair, "의자"));
                         CameraConnectionFragment.itemAdapter.notifyDataSetChanged();
+                        dismiss();
                         cfmdialog.show();
                     }
                 }
@@ -44,12 +45,9 @@ public class DialogCmpActivity extends Dialog {
 
     };
 
-
-
-
-
     public DialogCmpActivity(@NonNull Context context) {
         super(context, android.R.style.Theme_Translucent_NoTitleBar);
+        con= context;
     }
 
 }

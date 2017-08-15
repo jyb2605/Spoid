@@ -63,25 +63,39 @@ public class RecognitionScoreView extends View {
             CameraConnectionFragment.items_list.clear();
 
             for (final Recognition recog : results) {
-                if (recog.getConfidence() > 0.3) {
+                if (recog.getConfidence() > 0.1) {
                     Log.e("recog", "ID : " + recog.getId() + ", TITLE : " + recog.getTitle() + ", recognition rate : " + recog.getConfidence());
 
 
 
 
                     switch (Integer.valueOf(recog.getId())) {
-                        case 543:
-                            CameraConnectionFragment.items_list.add(new Item("키보드", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
-                            break;
+//                        case 543:
+//                            CameraConnectionFragment.items_list.add(new Item("키보드", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.icon_laptop, R.drawable.logo));
+//                            break;
                         case 552:
-                            CameraConnectionFragment.items_list.add(new Item("노트북", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
+                            CameraConnectionFragment.items_list.add(new Item("노트북", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.icon_laptop, R.drawable.logo));
                             break;
-                        case 310:
-                            CameraConnectionFragment.items_list.add(new Item("의자", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
+//                        case 310:
+                        case 330:
+                            CameraConnectionFragment.items_list.add(new Item("꽃", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.group_8, R.drawable.logo));
                             break;
-                        default:
-                            CameraConnectionFragment.items_list.add(new Item(recog.getTitle(), "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
+                        case 811:
+                            CameraConnectionFragment.items_list.add(new Item("컵", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.icon_cup, R.drawable.logo));
                             break;
+                        case 980:
+                            CameraConnectionFragment.items_list.add(new Item("스마트폰", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.group_14, R.drawable.logo));
+                            break;
+                        case 309:
+                            CameraConnectionFragment.items_list.add(new Item("의자", "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.icon_chair, R.drawable.logo));
+
+                            break;
+
+//                        default:
+//                            CameraConnectionFragment.items_list.add(new Item(recog.getTitle(), "키보드+모니터", "망치", "노트북은 짱이다", R.drawable.logo, R.drawable.logo));
+//                            break;
+
+
                     }
 
                 }
